@@ -1,0 +1,35 @@
+platform :ios, '9.3'
+
+use_frameworks!
+pod 'CheckmarkCollectionViewCell', :path => '..'
+
+# code quality scripts
+def scripts
+	script_phase :name => 'SwiftFormat', :execution_position => :before_compile, :script => <<-eos
+		if which swiftformat >/dev/null; then
+		  swiftformat --config "${SRCROOT}/.swiftformat" "${SRCROOT}/../Sources"
+		  swiftformat "${SRCROOT}"
+		else
+		  echo "warning: SwiftFormat not installed, execute 'brew install swiftformat'"
+		fi
+	eos
+
+	script_phase :name => 'SwiftLint', :execution_position => :after_compile, :script => <<-eos
+		if which swiftlint >/dev/null; then
+			swiftlint autocorrect --config "${SRCROOT}/../Sources/.swiftlint.yml"
+			swiftlint lint --config "${SRCROOT}/../Sources/.swiftlint.yml"
+			cd "${SRCROOT}/../Sources"
+			swiftlint autocorrect
+			swiftlint
+		else
+		  echo "warning: SwiftLint not installed, execute 'brew install swiftlint'"
+		fi
+	eos
+end
+
+target 'CheckmarkCollectionViewCellDemo' do
+    scripts
+end
+
+#target 'CheckmarkCollectionViewCellDemoUITests' do
+#end

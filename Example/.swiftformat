@@ -1,0 +1,5 @@
+--exclude Pods
+--commas always
+--disable unusedArguments
+--ifdef noindent
+--comments ignore

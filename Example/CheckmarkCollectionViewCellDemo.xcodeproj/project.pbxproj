@@ -1,0 +1,456 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		73E6B4756B8465DBF0B07BCC /* Pods_CheckmarkCollectionViewCellDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAA2F9DBB5E26B7985CFC6CC /* Pods_CheckmarkCollectionViewCellDemo.framework */; };
+		DC4EAF65216B6AEB00E51171 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC4EAF64216B6AEB00E51171 /* AppDelegate.swift */; };
+		DC4EAF6A216B6AEB00E51171 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC4EAF68216B6AEB00E51171 /* Main.storyboard */; };
+		DC4EAF6C216B6AF000E51171 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DC4EAF6B216B6AF000E51171 /* Assets.xcassets */; };
+		DC4EAF6F216B6AF000E51171 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC4EAF6D216B6AF000E51171 /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		602EC5F537EB0FFAA88F1F70 /* Pods-CheckmarkCollectionViewCellDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CheckmarkCollectionViewCellDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CheckmarkCollectionViewCellDemo/Pods-CheckmarkCollectionViewCellDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		B066D7D9AD80D7F199C2A9DE /* Pods-CheckmarkCollectionViewCellDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CheckmarkCollectionViewCellDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-CheckmarkCollectionViewCellDemo/Pods-CheckmarkCollectionViewCellDemo.release.xcconfig"; sourceTree = "<group>"; };
+		DC4EAF61216B6AEB00E51171 /* CheckmarkCollectionViewCellDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CheckmarkCollectionViewCellDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DC4EAF64216B6AEB00E51171 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		DC4EAF69216B6AEB00E51171 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DC4EAF6B216B6AF000E51171 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DC4EAF6E216B6AF000E51171 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		DC4EAF70216B6AF000E51171 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DC4EAF76216B6B6D00E51171 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		DC4EAF77216B6B6D00E51171 /* CHANGELOG.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = CHANGELOG.md; path = ../CHANGELOG.md; sourceTree = "<group>"; };
+		EAA2F9DBB5E26B7985CFC6CC /* Pods_CheckmarkCollectionViewCellDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CheckmarkCollectionViewCellDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DC4EAF5E216B6AEB00E51171 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				73E6B4756B8465DBF0B07BCC /* Pods_CheckmarkCollectionViewCellDemo.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1A935C1E5A2B1C9F0DE5FFE1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EAA2F9DBB5E26B7985CFC6CC /* Pods_CheckmarkCollectionViewCellDemo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2D97D714034268BCA014E735 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				602EC5F537EB0FFAA88F1F70 /* Pods-CheckmarkCollectionViewCellDemo.debug.xcconfig */,
+				B066D7D9AD80D7F199C2A9DE /* Pods-CheckmarkCollectionViewCellDemo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		DC4EAF58216B6AEB00E51171 = {
+			isa = PBXGroup;
+			children = (
+				DC4EAF76216B6B6D00E51171 /* README.md */,
+				DC4EAF77216B6B6D00E51171 /* CHANGELOG.md */,
+				DC4EAF63216B6AEB00E51171 /* CheckmarkCollectionViewCellDemo */,
+				DC4EAF62216B6AEB00E51171 /* Products */,
+				2D97D714034268BCA014E735 /* Pods */,
+				1A935C1E5A2B1C9F0DE5FFE1 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		DC4EAF62216B6AEB00E51171 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DC4EAF61216B6AEB00E51171 /* CheckmarkCollectionViewCellDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DC4EAF63216B6AEB00E51171 /* CheckmarkCollectionViewCellDemo */ = {
+			isa = PBXGroup;
+			children = (
+				DC4EAF64216B6AEB00E51171 /* AppDelegate.swift */,
+				DC4EAF68216B6AEB00E51171 /* Main.storyboard */,
+				DC4EAF6B216B6AF000E51171 /* Assets.xcassets */,
+				DC4EAF6D216B6AF000E51171 /* LaunchScreen.storyboard */,
+				DC4EAF70216B6AF000E51171 /* Info.plist */,
+			);
+			path = CheckmarkCollectionViewCellDemo;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DC4EAF60216B6AEB00E51171 /* CheckmarkCollectionViewCellDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DC4EAF73216B6AF000E51171 /* Build configuration list for PBXNativeTarget "CheckmarkCollectionViewCellDemo" */;
+			buildPhases = (
+				B33370CB4ACBA4BCA0B20225 /* [CP] Check Pods Manifest.lock */,
+				044C6C4C6215A1D4C2E477C2 /* [CP-User] SwiftFormat */,
+				DC4EAF5D216B6AEB00E51171 /* Sources */,
+				DC4EAF5E216B6AEB00E51171 /* Frameworks */,
+				DC4EAF5F216B6AEB00E51171 /* Resources */,
+				38EC46886BAD9906B2FB521B /* [CP] Embed Pods Frameworks */,
+				06075094733240BEB4B1F8EE /* [CP-User] SwiftLint */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CheckmarkCollectionViewCellDemo;
+			productName = CheckmarkCollectionViewCellDemo;
+			productReference = DC4EAF61216B6AEB00E51171 /* CheckmarkCollectionViewCellDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DC4EAF59216B6AEB00E51171 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1000;
+				LastUpgradeCheck = 1000;
+				ORGANIZATIONNAME = "Yonat Sharon";
+				TargetAttributes = {
+					DC4EAF60216B6AEB00E51171 = {
+						CreatedOnToolsVersion = 10.0;
+					};
+				};
+			};
+			buildConfigurationList = DC4EAF5C216B6AEB00E51171 /* Build configuration list for PBXProject "CheckmarkCollectionViewCellDemo" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DC4EAF58216B6AEB00E51171;
+			productRefGroup = DC4EAF62216B6AEB00E51171 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DC4EAF60216B6AEB00E51171 /* CheckmarkCollectionViewCellDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DC4EAF5F216B6AEB00E51171 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC4EAF6F216B6AF000E51171 /* LaunchScreen.storyboard in Resources */,
+				DC4EAF6C216B6AF000E51171 /* Assets.xcassets in Resources */,
+				DC4EAF6A216B6AEB00E51171 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		044C6C4C6215A1D4C2E477C2 /* [CP-User] SwiftFormat */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "[CP-User] SwiftFormat";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\t\tif which swiftformat >/dev/null; then\n\t\t  swiftformat --config \"${SRCROOT}/.swiftformat\" \"${SRCROOT}/../Sources\"\n\t\t  swiftformat \"${SRCROOT}\"\n\t\telse\n\t\t  echo \"warning: SwiftFormat not installed, execute 'brew install swiftformat'\"\n\t\tfi\n";
+			showEnvVarsInLog = 0;
+		};
+		06075094733240BEB4B1F8EE /* [CP-User] SwiftLint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "[CP-User] SwiftLint";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\t\tif which swiftlint >/dev/null; then\n\t\t\tswiftlint autocorrect --config \"${SRCROOT}/../Sources/.swiftlint.yml\"\n\t\t\tswiftlint lint --config \"${SRCROOT}/../Sources/.swiftlint.yml\"\n\t\t\tcd \"${SRCROOT}/../Sources\"\n\t\t\tswiftlint autocorrect\n\t\t\tswiftlint\n\t\telse\n\t\t  echo \"warning: SwiftLint not installed, execute 'brew install swiftlint'\"\n\t\tfi\n";
+			showEnvVarsInLog = 0;
+		};
+		38EC46886BAD9906B2FB521B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-CheckmarkCollectionViewCellDemo/Pods-CheckmarkCollectionViewCellDemo-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/CheckmarkCollectionViewCell/CheckmarkCollectionViewCell.framework",
+				"${BUILT_PRODUCTS_DIR}/MiniLayout/MiniLayout.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CheckmarkCollectionViewCell.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MiniLayout.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CheckmarkCollectionViewCellDemo/Pods-CheckmarkCollectionViewCellDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B33370CB4ACBA4BCA0B20225 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CheckmarkCollectionViewCellDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DC4EAF5D216B6AEB00E51171 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC4EAF65216B6AEB00E51171 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		DC4EAF68216B6AEB00E51171 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DC4EAF69216B6AEB00E51171 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		DC4EAF6D216B6AF000E51171 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DC4EAF6E216B6AF000E51171 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DC4EAF71216B6AF000E51171 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		DC4EAF72216B6AF000E51171 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DC4EAF74216B6AF000E51171 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 602EC5F537EB0FFAA88F1F70 /* Pods-CheckmarkCollectionViewCellDemo.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = CheckmarkCollectionViewCellDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.roysharon.CheckmarkCollectionViewCellDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DC4EAF75216B6AF000E51171 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B066D7D9AD80D7F199C2A9DE /* Pods-CheckmarkCollectionViewCellDemo.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = CheckmarkCollectionViewCellDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.roysharon.CheckmarkCollectionViewCellDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DC4EAF5C216B6AEB00E51171 /* Build configuration list for PBXProject "CheckmarkCollectionViewCellDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DC4EAF71216B6AF000E51171 /* Debug */,
+				DC4EAF72216B6AF000E51171 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DC4EAF73216B6AF000E51171 /* Build configuration list for PBXNativeTarget "CheckmarkCollectionViewCellDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DC4EAF74216B6AF000E51171 /* Debug */,
+				DC4EAF75216B6AF000E51171 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DC4EAF59216B6AEB00E51171 /* Project object */;
+}
