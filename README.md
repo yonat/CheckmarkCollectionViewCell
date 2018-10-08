@@ -1,6 +1,5 @@
 # CheckmarkCollectionViewCell
 <img align="right" src="Screenshots/CheckmarkCollectionViewCell.png">
-Cell with checkbox when it `isSelected`, empty circle when not.
 
 [![Swift Version][swift-image]][swift-url]
 [![Build Status][travis-image]][travis-url]
@@ -8,6 +7,9 @@ Cell with checkbox when it `isSelected`, empty circle when not.
 [![CocoaPods Compatible](https://img.shields.io/cocoapods/v/CheckmarkCollectionViewCell.svg)](https://img.shields.io/cocoapods/v/CheckmarkCollectionViewCell.svg)  
 [![Platform](https://img.shields.io/cocoapods/p/CheckmarkCollectionViewCell.svg?style=flat)](http://cocoapods.org/pods/CheckmarkCollectionViewCell)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
+
+`UICollectionViewCell` with checkbox when it `isSelected` and empty circle when not - like Photos.app "Select" mode.
+
 
 ## Usage
 

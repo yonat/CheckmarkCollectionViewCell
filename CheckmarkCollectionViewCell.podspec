@@ -3,7 +3,7 @@ Pod::Spec.new do |s|
 
   s.name         = "CheckmarkCollectionViewCell"
   s.version      = "1.0.0"
-  s.summary      = "Cell with checkbox when it isSelected, empty circle when not."
+  s.summary      = "UICollectionViewCell with checkbox when it isSelected and empty circle when not - like Photos.app Select mode."
 
   s.homepage     = "https://github.com/yonat/CheckmarkCollectionViewCell"
   s.screenshots  = "https://raw.githubusercontent.com/yonat/CheckmarkCollectionViewCell/master/Screenshots/CheckmarkCollectionViewCell.png"
