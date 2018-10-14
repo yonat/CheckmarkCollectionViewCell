@@ -24,15 +24,20 @@ import UIKit
 
     @IBInspectable open var checkmarkMargin: CGFloat = 8 {
         didSet {
-            for attribute in checkmarkLocation {
-                contentView.constrain(checkmarkView, at: attribute, diff: attribute.inwardSign * checkmarkMargin)
+            checkmarkConstraints.forEach {
+                let sign = $0.constant / abs($0.constant)
+                $0.constant = checkmarkMargin * sign
             }
         }
     }
 
     open var checkmarkLocation: Set<NSLayoutConstraint.Attribute> = [.bottom, .right] {
         didSet {
-            checkmarkMargin = { checkmarkMargin }()
+            guard checkmarkView.superview == contentView else { return }
+            contentView.removeConstraints(checkmarkConstraints)
+            checkmarkConstraints = checkmarkLocation.map { attribute in
+                contentView.constrain(checkmarkView, at: attribute, diff: attribute.inwardSign * checkmarkMargin)
+            }
         }
     }
 
@@ -45,6 +50,8 @@ import UIKit
         checkmarkView.translatesAutoresizingMaskIntoConstraints = false
         return checkmarkView
     }()
+
+    var checkmarkConstraints: [NSLayoutConstraint] = []
 
     // MARK: - Overrides
 
@@ -78,7 +85,7 @@ import UIKit
         contentView.addSubview(checkmarkView)
         updateCheckmarkImage()
         checkmarkSize = { checkmarkSize }()
-        checkmarkMargin = { checkmarkMargin }()
+        checkmarkLocation = { checkmarkLocation }()
     }
 }
 
