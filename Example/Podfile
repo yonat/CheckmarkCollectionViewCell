@@ -31,5 +31,5 @@ target 'CheckmarkCollectionViewCellDemo' do
     scripts
 end
 
-#target 'CheckmarkCollectionViewCellDemoUITests' do
-#end
+target 'CheckmarkCollectionViewCellDemoUITests' do
+end

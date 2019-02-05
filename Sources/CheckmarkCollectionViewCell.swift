@@ -48,6 +48,7 @@ import UIKit
         checkmarkView.contentMode = .scaleAspectFit
         checkmarkView.layoutMargins = .zero
         checkmarkView.translatesAutoresizingMaskIntoConstraints = false
+        checkmarkView.accessibilityLabel = "checkmark"
         return checkmarkView
     }()
 
@@ -79,6 +80,7 @@ import UIKit
 
     private func updateCheckmarkImage() {
         checkmarkView.image = (isSelected ? selectedImage : deselectedImage)?.withRenderingMode(.alwaysTemplate)
+        checkmarkView.accessibilityValue = isSelected ? "checked" : "unchecked"
     }
 
     private func setup() {

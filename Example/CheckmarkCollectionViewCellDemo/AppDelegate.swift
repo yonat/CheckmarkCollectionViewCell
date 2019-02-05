@@ -9,18 +9,20 @@
 import UIKit
 
 class CheckmarkCollectionViewController: UICollectionViewController {
+    let cellColors = (0 ..< 42).map { _ in UIColor.randomColor(brightness: 1) }
+
     override func viewDidLoad() {
         super.viewDidLoad()
         collectionView.allowsMultipleSelection = true
     }
 
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 42
+        return cellColors.count
     }
 
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "CheckmarkCollectionViewCell", for: indexPath)
-        cell.contentView.backgroundColor = UIColor.randomColor(brightness: 1)
+        cell.contentView.backgroundColor = cellColors[indexPath.item]
         return cell
     }
 }

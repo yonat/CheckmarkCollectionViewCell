@@ -1,5 +1,5 @@
 --exclude Pods
 --commas always
---disable unusedArguments
+--disable unusedArguments,andOperator
 --ifdef noindent
 --comments ignore

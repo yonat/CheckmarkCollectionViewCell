@@ -1,8 +1,5 @@
 excluded:
   - Pods
-disabled_rules:
-  - trailing_comma
-  - fallthrough
 line_length: 150
 opt_in_rules:
   - force_unwrapping
@@ -24,6 +21,21 @@ opt_in_rules:
   - override_in_extension
   - single_test_class
   - sorted_first_last
+  - convenience_type
+  - empty_count
+  - empty_string
+  - toggle_bool
+  - unused_private_declaration
+  - identical_operands
+  - array_init
+  - implicit_return
+  - implicitly_unwrapped_optional
+  - vertical_whitespace_opening_braces
+  - vertical_whitespace_closing_braces
+  - last_where
+  - redundant_type_annotation
+trailing_comma:
+  mandatory_comma: true
 identifier_name:
   excluded:
     - i

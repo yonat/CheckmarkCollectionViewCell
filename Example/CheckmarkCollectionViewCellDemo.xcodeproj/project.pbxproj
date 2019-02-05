@@ -7,14 +7,28 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		728F899FE6307C7D92D226CA /* Pods_CheckmarkCollectionViewCellDemoUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19057CA1C9B98930CABAE098 /* Pods_CheckmarkCollectionViewCellDemoUITests.framework */; };
 		73E6B4756B8465DBF0B07BCC /* Pods_CheckmarkCollectionViewCellDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAA2F9DBB5E26B7985CFC6CC /* Pods_CheckmarkCollectionViewCellDemo.framework */; };
 		DC4EAF65216B6AEB00E51171 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC4EAF64216B6AEB00E51171 /* AppDelegate.swift */; };
 		DC4EAF6A216B6AEB00E51171 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC4EAF68216B6AEB00E51171 /* Main.storyboard */; };
 		DC4EAF6C216B6AF000E51171 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DC4EAF6B216B6AF000E51171 /* Assets.xcassets */; };
 		DC4EAF6F216B6AF000E51171 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC4EAF6D216B6AF000E51171 /* LaunchScreen.storyboard */; };
+		DC52B517220914C100A01098 /* CheckmarkCollectionViewCellDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC52B516220914C100A01098 /* CheckmarkCollectionViewCellDemoUITests.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		DC52B519220914C100A01098 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DC4EAF59216B6AEB00E51171 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DC4EAF60216B6AEB00E51171;
+			remoteInfo = CheckmarkCollectionViewCellDemo;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		19057CA1C9B98930CABAE098 /* Pods_CheckmarkCollectionViewCellDemoUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CheckmarkCollectionViewCellDemoUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		58BCED1A5B7E318D5D941DEE /* Pods-CheckmarkCollectionViewCellDemoUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CheckmarkCollectionViewCellDemoUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CheckmarkCollectionViewCellDemoUITests/Pods-CheckmarkCollectionViewCellDemoUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		602EC5F537EB0FFAA88F1F70 /* Pods-CheckmarkCollectionViewCellDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CheckmarkCollectionViewCellDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CheckmarkCollectionViewCellDemo/Pods-CheckmarkCollectionViewCellDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		B066D7D9AD80D7F199C2A9DE /* Pods-CheckmarkCollectionViewCellDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CheckmarkCollectionViewCellDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-CheckmarkCollectionViewCellDemo/Pods-CheckmarkCollectionViewCellDemo.release.xcconfig"; sourceTree = "<group>"; };
 		DC4EAF61216B6AEB00E51171 /* CheckmarkCollectionViewCellDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CheckmarkCollectionViewCellDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -25,7 +39,11 @@
 		DC4EAF70216B6AF000E51171 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DC4EAF76216B6B6D00E51171 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		DC4EAF77216B6B6D00E51171 /* CHANGELOG.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = CHANGELOG.md; path = ../CHANGELOG.md; sourceTree = "<group>"; };
+		DC52B514220914BF00A01098 /* CheckmarkCollectionViewCellDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CheckmarkCollectionViewCellDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DC52B516220914C100A01098 /* CheckmarkCollectionViewCellDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckmarkCollectionViewCellDemoUITests.swift; sourceTree = "<group>"; };
+		DC52B518220914C100A01098 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EAA2F9DBB5E26B7985CFC6CC /* Pods_CheckmarkCollectionViewCellDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CheckmarkCollectionViewCellDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F55C945A5A2D738411057BB7 /* Pods-CheckmarkCollectionViewCellDemoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CheckmarkCollectionViewCellDemoUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-CheckmarkCollectionViewCellDemoUITests/Pods-CheckmarkCollectionViewCellDemoUITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +55,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		DC52B511220914BF00A01098 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				728F899FE6307C7D92D226CA /* Pods_CheckmarkCollectionViewCellDemoUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -44,6 +70,7 @@
 			isa = PBXGroup;
 			children = (
 				EAA2F9DBB5E26B7985CFC6CC /* Pods_CheckmarkCollectionViewCellDemo.framework */,
+				19057CA1C9B98930CABAE098 /* Pods_CheckmarkCollectionViewCellDemoUITests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -53,6 +80,8 @@
 			children = (
 				602EC5F537EB0FFAA88F1F70 /* Pods-CheckmarkCollectionViewCellDemo.debug.xcconfig */,
 				B066D7D9AD80D7F199C2A9DE /* Pods-CheckmarkCollectionViewCellDemo.release.xcconfig */,
+				58BCED1A5B7E318D5D941DEE /* Pods-CheckmarkCollectionViewCellDemoUITests.debug.xcconfig */,
+				F55C945A5A2D738411057BB7 /* Pods-CheckmarkCollectionViewCellDemoUITests.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -63,6 +92,7 @@
 				DC4EAF76216B6B6D00E51171 /* README.md */,
 				DC4EAF77216B6B6D00E51171 /* CHANGELOG.md */,
 				DC4EAF63216B6AEB00E51171 /* CheckmarkCollectionViewCellDemo */,
+				DC52B515220914C100A01098 /* CheckmarkCollectionViewCellDemoUITests */,
 				DC4EAF62216B6AEB00E51171 /* Products */,
 				2D97D714034268BCA014E735 /* Pods */,
 				1A935C1E5A2B1C9F0DE5FFE1 /* Frameworks */,
@@ -73,6 +103,7 @@
 			isa = PBXGroup;
 			children = (
 				DC4EAF61216B6AEB00E51171 /* CheckmarkCollectionViewCellDemo.app */,
+				DC52B514220914BF00A01098 /* CheckmarkCollectionViewCellDemoUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -87,6 +118,15 @@
 				DC4EAF70216B6AF000E51171 /* Info.plist */,
 			);
 			path = CheckmarkCollectionViewCellDemo;
+			sourceTree = "<group>";
+		};
+		DC52B515220914C100A01098 /* CheckmarkCollectionViewCellDemoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				DC52B516220914C100A01098 /* CheckmarkCollectionViewCellDemoUITests.swift */,
+				DC52B518220914C100A01098 /* Info.plist */,
+			);
+			path = CheckmarkCollectionViewCellDemoUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -113,18 +153,43 @@
 			productReference = DC4EAF61216B6AEB00E51171 /* CheckmarkCollectionViewCellDemo.app */;
 			productType = "com.apple.product-type.application";
 		};
+		DC52B513220914BF00A01098 /* CheckmarkCollectionViewCellDemoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DC52B51D220914C100A01098 /* Build configuration list for PBXNativeTarget "CheckmarkCollectionViewCellDemoUITests" */;
+			buildPhases = (
+				9DAA1DF7C3D5C4D5F50D9442 /* [CP] Check Pods Manifest.lock */,
+				DC52B510220914BF00A01098 /* Sources */,
+				DC52B511220914BF00A01098 /* Frameworks */,
+				DC52B512220914BF00A01098 /* Resources */,
+				5B0A788D94DAB73B93AB7E2F /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DC52B51A220914C100A01098 /* PBXTargetDependency */,
+			);
+			name = CheckmarkCollectionViewCellDemoUITests;
+			productName = CheckmarkCollectionViewCellDemoUITests;
+			productReference = DC52B514220914BF00A01098 /* CheckmarkCollectionViewCellDemoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		DC4EAF59216B6AEB00E51171 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1000;
+				DefaultBuildSystemTypeForWorkspace = Original;
+				LastSwiftUpdateCheck = 1010;
 				LastUpgradeCheck = 1000;
 				ORGANIZATIONNAME = "Yonat Sharon";
 				TargetAttributes = {
 					DC4EAF60216B6AEB00E51171 = {
 						CreatedOnToolsVersion = 10.0;
+					};
+					DC52B513220914BF00A01098 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = DC4EAF60216B6AEB00E51171;
 					};
 				};
 			};
@@ -142,6 +207,7 @@
 			projectRoot = "";
 			targets = (
 				DC4EAF60216B6AEB00E51171 /* CheckmarkCollectionViewCellDemo */,
+				DC52B513220914BF00A01098 /* CheckmarkCollectionViewCellDemoUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -154,6 +220,13 @@
 				DC4EAF6F216B6AF000E51171 /* LaunchScreen.storyboard in Resources */,
 				DC4EAF6C216B6AF000E51171 /* Assets.xcassets in Resources */,
 				DC4EAF6A216B6AEB00E51171 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DC52B512220914BF00A01098 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -222,6 +295,52 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CheckmarkCollectionViewCellDemo/Pods-CheckmarkCollectionViewCellDemo-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		5B0A788D94DAB73B93AB7E2F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-CheckmarkCollectionViewCellDemoUITests/Pods-CheckmarkCollectionViewCellDemoUITests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/CheckmarkCollectionViewCell/CheckmarkCollectionViewCell.framework",
+				"${BUILT_PRODUCTS_DIR}/MiniLayout/MiniLayout.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CheckmarkCollectionViewCell.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MiniLayout.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CheckmarkCollectionViewCellDemoUITests/Pods-CheckmarkCollectionViewCellDemoUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9DAA1DF7C3D5C4D5F50D9442 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CheckmarkCollectionViewCellDemoUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
 		B33370CB4ACBA4BCA0B20225 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -255,7 +374,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		DC52B510220914BF00A01098 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC52B517220914C100A01098 /* CheckmarkCollectionViewCellDemoUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DC52B51A220914C100A01098 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DC4EAF60216B6AEB00E51171 /* CheckmarkCollectionViewCellDemo */;
+			targetProxy = DC52B519220914C100A01098 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		DC4EAF68216B6AEB00E51171 /* Main.storyboard */ = {
@@ -429,6 +564,46 @@
 			};
 			name = Release;
 		};
+		DC52B51B220914C100A01098 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 58BCED1A5B7E318D5D941DEE /* Pods-CheckmarkCollectionViewCellDemoUITests.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = CheckmarkCollectionViewCellDemoUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.roysharon.CheckmarkCollectionViewCellDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = CheckmarkCollectionViewCellDemo;
+			};
+			name = Debug;
+		};
+		DC52B51C220914C100A01098 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F55C945A5A2D738411057BB7 /* Pods-CheckmarkCollectionViewCellDemoUITests.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = CheckmarkCollectionViewCellDemoUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.roysharon.CheckmarkCollectionViewCellDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = CheckmarkCollectionViewCellDemo;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -446,6 +621,15 @@
 			buildConfigurations = (
 				DC4EAF74216B6AF000E51171 /* Debug */,
 				DC4EAF75216B6AF000E51171 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DC52B51D220914C100A01098 /* Build configuration list for PBXNativeTarget "CheckmarkCollectionViewCellDemoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DC52B51B220914C100A01098 /* Debug */,
+				DC52B51C220914C100A01098 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
