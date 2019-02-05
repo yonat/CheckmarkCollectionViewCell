@@ -18,7 +18,6 @@ import UIKit
     @IBInspectable open var checkmarkSize: CGFloat = 24 {
         didSet {
             checkmarkView.constrain(.width, to: checkmarkSize)
-            checkmarkView.constrain(.height, to: checkmarkSize)
         }
     }
 
@@ -48,6 +47,7 @@ import UIKit
         checkmarkView.contentMode = .scaleAspectFit
         checkmarkView.layoutMargins = .zero
         checkmarkView.translatesAutoresizingMaskIntoConstraints = false
+        checkmarkView.heightAnchor.constraint(equalTo: checkmarkView.widthAnchor).isActive = true
         checkmarkView.accessibilityLabel = "checkmark"
         return checkmarkView
     }()

@@ -38,4 +38,5 @@ class CheckmarkCollectionViewCellDemoUITests: XCTestCase {
         XCTAssertEqual(firstCheckmark.value as! String, "unchecked")
     }
 }
+
 // swiftlint:enable force_cast
