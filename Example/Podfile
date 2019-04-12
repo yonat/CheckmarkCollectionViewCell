@@ -7,8 +7,8 @@ pod 'CheckmarkCollectionViewCell', :path => '..'
 def scripts
 	script_phase :name => 'SwiftFormat', :execution_position => :before_compile, :script => <<-eos
 		if which swiftformat >/dev/null; then
-		  swiftformat --config "${SRCROOT}/.swiftformat" "${SRCROOT}/../Sources"
-		  swiftformat "${SRCROOT}"
+      swiftformat --swiftversion ${SWIFT_VERSION} --config "${SRCROOT}/.swiftformat" "${SRCROOT}/../Sources"
+		  swiftformat --swiftversion ${SWIFT_VERSION} "${SRCROOT}"
 		else
 		  echo "warning: SwiftFormat not installed, execute 'brew install swiftformat'"
 		fi

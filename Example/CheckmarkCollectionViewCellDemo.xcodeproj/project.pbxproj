@@ -249,7 +249,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\t\tif which swiftformat >/dev/null; then\n\t\t  swiftformat --config \"${SRCROOT}/.swiftformat\" \"${SRCROOT}/../Sources\"\n\t\t  swiftformat \"${SRCROOT}\"\n\t\telse\n\t\t  echo \"warning: SwiftFormat not installed, execute 'brew install swiftformat'\"\n\t\tfi\n";
+			shellScript = "\t\tif which swiftformat >/dev/null; then\n          swiftformat --swiftversion ${SWIFT_VERSION} --config \"${SRCROOT}/.swiftformat\" \"${SRCROOT}/../Sources\"\n\t\t  swiftformat --swiftversion ${SWIFT_VERSION} \"${SRCROOT}\"\n\t\telse\n\t\t  echo \"warning: SwiftFormat not installed, execute 'brew install swiftformat'\"\n\t\tfi\n";
 			showEnvVarsInLog = 0;
 		};
 		06075094733240BEB4B1F8EE /* [CP-User] SwiftLint */ = {
@@ -279,7 +279,7 @@
 			inputFileListPaths = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-CheckmarkCollectionViewCellDemo/Pods-CheckmarkCollectionViewCellDemo-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-CheckmarkCollectionViewCellDemo/Pods-CheckmarkCollectionViewCellDemo-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/CheckmarkCollectionViewCell/CheckmarkCollectionViewCell.framework",
 				"${BUILT_PRODUCTS_DIR}/MiniLayout/MiniLayout.framework",
 			);
@@ -292,7 +292,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CheckmarkCollectionViewCellDemo/Pods-CheckmarkCollectionViewCellDemo-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CheckmarkCollectionViewCellDemo/Pods-CheckmarkCollectionViewCellDemo-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		5B0A788D94DAB73B93AB7E2F /* [CP] Embed Pods Frameworks */ = {
@@ -303,7 +303,7 @@
 			inputFileListPaths = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-CheckmarkCollectionViewCellDemoUITests/Pods-CheckmarkCollectionViewCellDemoUITests-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-CheckmarkCollectionViewCellDemoUITests/Pods-CheckmarkCollectionViewCellDemoUITests-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/CheckmarkCollectionViewCell/CheckmarkCollectionViewCell.framework",
 				"${BUILT_PRODUCTS_DIR}/MiniLayout/MiniLayout.framework",
 			);
@@ -316,7 +316,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CheckmarkCollectionViewCellDemoUITests/Pods-CheckmarkCollectionViewCellDemoUITests-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CheckmarkCollectionViewCellDemoUITests/Pods-CheckmarkCollectionViewCellDemoUITests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		9DAA1DF7C3D5C4D5F50D9442 /* [CP] Check Pods Manifest.lock */ = {

@@ -4,7 +4,7 @@ PODS:
     - MiniLayout
   - CheckmarkCollectionViewCell/Resources (1.0.1):
     - MiniLayout
-  - MiniLayout (1.4.0)
+  - MiniLayout (1.4.1)
 
 DEPENDENCIES:
   - CheckmarkCollectionViewCell (from `..`)
@@ -18,9 +18,9 @@ EXTERNAL SOURCES:
     :path: ".."
 
 SPEC CHECKSUMS:
-  CheckmarkCollectionViewCell: 4659e45323915254b073333cfdece4ba1571ee76
-  MiniLayout: e35331ce9ab50a4111c3f91deca158834f86d9e7
+  CheckmarkCollectionViewCell: b61e0d592d82c24486246a8c30f75e9e33f5a4c4
+  MiniLayout: bd42e3763700c3002f39ff3b36dc8a027ea5078a
 
-PODFILE CHECKSUM: aae36b10bf2dcc586c196c57b7d365762c39589e
+PODFILE CHECKSUM: beddc5c96abfdff95019332ed07beffc2179d10f
 
-COCOAPODS: 1.5.3
+COCOAPODS: 1.6.1
