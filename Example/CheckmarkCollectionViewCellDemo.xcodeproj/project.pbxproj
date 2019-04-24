@@ -138,11 +138,13 @@
 			buildPhases = (
 				B33370CB4ACBA4BCA0B20225 /* [CP] Check Pods Manifest.lock */,
 				044C6C4C6215A1D4C2E477C2 /* [CP-User] SwiftFormat */,
+				5D8DD2BE19F0D31DE91C5AE8 /* [CP-User] SwiftLintAutocorrect */,
 				DC4EAF5D216B6AEB00E51171 /* Sources */,
 				DC4EAF5E216B6AEB00E51171 /* Frameworks */,
 				DC4EAF5F216B6AEB00E51171 /* Resources */,
 				38EC46886BAD9906B2FB521B /* [CP] Embed Pods Frameworks */,
 				06075094733240BEB4B1F8EE /* [CP-User] SwiftLint */,
+				4622DD0404FDF94BA8DD1D79 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -162,6 +164,7 @@
 				DC52B511220914BF00A01098 /* Frameworks */,
 				DC52B512220914BF00A01098 /* Resources */,
 				5B0A788D94DAB73B93AB7E2F /* [CP] Embed Pods Frameworks */,
+				3D072019B83D076A6D3187D0 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -249,7 +252,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\t\tif which swiftformat >/dev/null; then\n          swiftformat --swiftversion ${SWIFT_VERSION} --config \"${SRCROOT}/.swiftformat\" \"${SRCROOT}/../Sources\"\n\t\t  swiftformat --swiftversion ${SWIFT_VERSION} \"${SRCROOT}\"\n\t\telse\n\t\t  echo \"warning: SwiftFormat not installed, execute 'brew install swiftformat'\"\n\t\tfi\n";
+			shellScript = "if [ \"Debug\" == \"${CONFIGURATION}\" ]; then ${PODS_ROOT}/SwiftFormat/CommandLineTool/swiftformat --swiftversion ${SWIFT_VERSION} --config ${PODS_ROOT}/SwiftQuality/.swiftformat ${SRCROOT}/.. ; fi";
 			showEnvVarsInLog = 0;
 		};
 		06075094733240BEB4B1F8EE /* [CP-User] SwiftLint */ = {
@@ -268,7 +271,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\t\tif which swiftlint >/dev/null; then\n\t\t\tswiftlint autocorrect --config \"${SRCROOT}/../Sources/.swiftlint.yml\"\n\t\t\tswiftlint lint --config \"${SRCROOT}/../Sources/.swiftlint.yml\"\n\t\t\tcd \"${SRCROOT}/../Sources\"\n\t\t\tswiftlint autocorrect\n\t\t\tswiftlint\n\t\telse\n\t\t  echo \"warning: SwiftLint not installed, execute 'brew install swiftlint'\"\n\t\tfi\n";
+			shellScript = "if [ \"Debug\" == \"${CONFIGURATION}\" ]; then ${PODS_ROOT}/SwiftLint/swiftlint --config ${PODS_ROOT}/SwiftQuality/.swiftlint.yml --path ${SRCROOT}/.. ; fi";
 			showEnvVarsInLog = 0;
 		};
 		38EC46886BAD9906B2FB521B /* [CP] Embed Pods Frameworks */ = {
@@ -295,6 +298,54 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CheckmarkCollectionViewCellDemo/Pods-CheckmarkCollectionViewCellDemo-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		3D072019B83D076A6D3187D0 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CheckmarkCollectionViewCellDemoUITests/Pods-CheckmarkCollectionViewCellDemoUITests-resources.sh",
+				"${PODS_ROOT}/SwiftQuality/.swiftformat",
+				"${PODS_ROOT}/SwiftQuality/.swiftlint.yml",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/.swiftformat",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/.swiftlint.yml",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CheckmarkCollectionViewCellDemoUITests/Pods-CheckmarkCollectionViewCellDemoUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4622DD0404FDF94BA8DD1D79 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CheckmarkCollectionViewCellDemo/Pods-CheckmarkCollectionViewCellDemo-resources.sh",
+				"${PODS_ROOT}/SwiftQuality/.swiftformat",
+				"${PODS_ROOT}/SwiftQuality/.swiftlint.yml",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/.swiftformat",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/.swiftlint.yml",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CheckmarkCollectionViewCellDemo/Pods-CheckmarkCollectionViewCellDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		5B0A788D94DAB73B93AB7E2F /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -317,6 +368,25 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CheckmarkCollectionViewCellDemoUITests/Pods-CheckmarkCollectionViewCellDemoUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5D8DD2BE19F0D31DE91C5AE8 /* [CP-User] SwiftLintAutocorrect */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "[CP-User] SwiftLintAutocorrect";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if [ \"Debug\" == \"${CONFIGURATION}\" ]; then ${PODS_ROOT}/SwiftLint/swiftlint autocorrect --config ${PODS_ROOT}/SwiftQuality/.swiftlint.yml --path ${SRCROOT}/.. ; fi";
 			showEnvVarsInLog = 0;
 		};
 		9DAA1DF7C3D5C4D5F50D9442 /* [CP] Check Pods Manifest.lock */ = {
