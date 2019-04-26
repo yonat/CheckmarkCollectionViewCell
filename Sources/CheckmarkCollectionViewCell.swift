@@ -12,16 +12,16 @@ import UIKit
 @IBDesignable open class CheckmarkCollectionViewCell: UICollectionViewCell {
     // MARK: - Properties
 
-    @IBInspectable open var selectedImage: UIImage? = UIImage(podAssetName: "checked") { didSet { updateCheckmarkImage() } }
-    @IBInspectable open var deselectedImage: UIImage? = UIImage(podAssetName: "unchecked") { didSet { updateCheckmarkImage() } }
+    @IBInspectable open dynamic var selectedImage: UIImage? = UIImage(podAssetName: "checked") { didSet { updateCheckmarkImage() } }
+    @IBInspectable open dynamic var deselectedImage: UIImage? = UIImage(podAssetName: "unchecked") { didSet { updateCheckmarkImage() } }
 
-    @IBInspectable open var checkmarkSize: CGFloat = 24 {
+    @IBInspectable open dynamic var checkmarkSize: CGFloat = 24 {
         didSet {
             checkmarkView.constrain(.width, to: checkmarkSize)
         }
     }
 
-    @IBInspectable open var checkmarkMargin: CGFloat = 8 {
+    @IBInspectable open dynamic var checkmarkMargin: CGFloat = 8 {
         didSet {
             checkmarkConstraints.forEach {
                 let sign = $0.constant / abs($0.constant)
@@ -30,11 +30,12 @@ import UIKit
         }
     }
 
-    open var checkmarkLocation: Set<NSLayoutConstraint.Attribute> = [.bottom, .right] {
+    /// Set of `NSLayoutConstraint.Attribute` specifying how to locate the checkmark in relation to the cell
+    @objc open dynamic var checkmarkLocation: NSSet = [NSLayoutConstraint.Attribute.bottom, NSLayoutConstraint.Attribute.right] {
         didSet {
             guard checkmarkView.superview == contentView else { return }
             contentView.removeConstraints(checkmarkConstraints)
-            checkmarkConstraints = checkmarkLocation.map { attribute in
+            checkmarkConstraints = checkmarkLocation.compactMap { $0 as? NSLayoutConstraint.Attribute }.map { attribute in
                 contentView.constrain(checkmarkView, at: attribute, diff: attribute.inwardSign * checkmarkMargin)
             }
         }

@@ -21,6 +21,8 @@ class MyCell: CheckmarkCollectionViewCell {
 
 ### Changing Appearance
 
+The properties below can be set in Interface Builder, in code, or through a UIAppearance proxy (e.g., `CheckmarkCollectionViewCell.appearance().deselectedImage = nil`).
+
 Shape:
 
 ```swift
@@ -44,7 +46,7 @@ Layout:
 
 ```swift
 cell.checkmarkMargin = 17.0
-cell.checkmarkLocation = [.top, .left]
+cell.checkmarkLocation = [NSLayoutConstraint.Attribute.top, NSLayoutConstraint.Attribute.left]
 ```
 
 ## Installation
