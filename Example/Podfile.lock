@@ -1,15 +1,15 @@
 PODS:
-  - CheckmarkCollectionViewCell (1.0.1):
-    - CheckmarkCollectionViewCell/Resources (= 1.0.1)
+  - CheckmarkCollectionViewCell (1.0.2):
+    - CheckmarkCollectionViewCell/Resources (= 1.0.2)
     - MiniLayout
-  - CheckmarkCollectionViewCell/Resources (1.0.1):
+  - CheckmarkCollectionViewCell/Resources (1.0.2):
     - MiniLayout
-  - MiniLayout (1.4.1)
-  - SwiftFormat/CLI (0.40.8)
-  - SwiftLint (0.31.0)
-  - SwiftQuality (1.0.0):
-    - SwiftFormat/CLI (= 0.40.8)
-    - SwiftLint (= 0.31.0)
+  - MiniLayout (1.4.2)
+  - SwiftFormat/CLI (0.40.9)
+  - SwiftLint (0.33.0)
+  - SwiftQuality (1.0.2):
+    - SwiftFormat/CLI (= 0.40.9)
+    - SwiftLint (= 0.33.0)
 
 DEPENDENCIES:
   - CheckmarkCollectionViewCell (from `..`)
@@ -29,16 +29,16 @@ EXTERNAL SOURCES:
 
 CHECKOUT OPTIONS:
   SwiftQuality:
-    :commit: e08572a726ab3178041bf37966db7dce8900c1d2
+    :commit: d56816af9d75882d222965c0bee01f5ca410f3e0
     :git: https://github.com/yonat/SwiftQuality
 
 SPEC CHECKSUMS:
-  CheckmarkCollectionViewCell: b61e0d592d82c24486246a8c30f75e9e33f5a4c4
-  MiniLayout: bd42e3763700c3002f39ff3b36dc8a027ea5078a
-  SwiftFormat: d9e5ca1aed735164fe9d26510ec508ddb8a93598
-  SwiftLint: 7a0227733d786395817373b2d0ca799fd0093ff3
-  SwiftQuality: 7e8e9783387fc64d0ad6f8a315507c9c0013dee8
+  CheckmarkCollectionViewCell: 6b4bb4bcf987c0616d6071494e4791085ad74e6b
+  MiniLayout: f819ad87432712e6b2596081a62e633a4961bfc6
+  SwiftFormat: 6b67b6e7fe73d664f0cbb4f13721f130462c86a5
+  SwiftLint: fed9c66336e41fc74dc48a73678380718f0c8b0e
+  SwiftQuality: 9dddd6752df12ae7ed3b1eed24b6fc42d75724cf
 
 PODFILE CHECKSUM: 9ffb88a64e02180da634973b6c7a2319053ef8d1
 
-COCOAPODS: 1.6.1
+COCOAPODS: 1.7.2

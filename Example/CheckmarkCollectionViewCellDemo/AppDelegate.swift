@@ -10,7 +10,7 @@ import CheckmarkCollectionViewCell
 import UIKit
 
 class CheckmarkCollectionViewController: UICollectionViewController {
-    let cellColors = (0 ..< 42).map { _ in UIColor.randomColor(brightness: 1) }
+    let cellColors = (0 ..< 42).map { _ in UIColor.randomColor(brightness: 1) } // swiftlint:disable:this numbers_smell
 
     override func viewDidLoad() {
         super.viewDidLoad()
