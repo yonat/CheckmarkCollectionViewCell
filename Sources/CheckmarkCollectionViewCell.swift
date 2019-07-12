@@ -6,7 +6,7 @@
 //  Copyright © 2018 Yonat Sharon. All rights reserved.
 //
 
-import MiniLayout
+import SweeterSwift
 import UIKit
 
 @IBDesignable open class CheckmarkCollectionViewCell: UICollectionViewCell {
