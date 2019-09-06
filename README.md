@@ -58,9 +58,13 @@ pod 'CheckmarkCollectionViewCell'
 ```
 
 
-### Manually:
+### Swift Package Manager:
 
-Copy `Sources/CheckmarkCollectionViewCell.swift` and [`MiniLayout.swift`](https://github.com/yonat/MiniLayout) to your Xcode project.
+```swift
+dependencies: [
+    .package(url: "https://github.com/yonat/CheckmarkCollectionViewCell", from: "1.0.5")
+]
+```
 
 ## Meta
 
