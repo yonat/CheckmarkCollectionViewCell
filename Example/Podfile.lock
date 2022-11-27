@@ -5,22 +5,21 @@ PODS:
   - CheckmarkCollectionViewCell/Resources (1.0.5):
     - SweeterSwift
   - SweeterSwift (1.0.5)
-  - SwiftFormat/CLI (0.40.9)
-  - SwiftLint (0.33.0)
-  - SwiftQuality (1.0.2):
-    - SwiftFormat/CLI (= 0.40.9)
-    - SwiftLint (= 0.33.0)
+  - SwiftFormat/CLI (0.50.4)
+  - SwiftLint (0.50.1)
+  - SwiftQuality (2.0.0):
+    - SwiftFormat/CLI (= 0.50.4)
+    - SwiftLint (= 0.50.1)
 
 DEPENDENCIES:
   - CheckmarkCollectionViewCell (from `..`)
   - SwiftQuality (from `https://github.com/yonat/SwiftQuality`)
 
 SPEC REPOS:
-  https://github.com/CocoaPods/Specs.git:
-    - SwiftFormat
-    - SwiftLint
   trunk:
     - SweeterSwift
+    - SwiftFormat
+    - SwiftLint
 
 EXTERNAL SOURCES:
   CheckmarkCollectionViewCell:
@@ -30,16 +29,16 @@ EXTERNAL SOURCES:
 
 CHECKOUT OPTIONS:
   SwiftQuality:
-    :commit: d56816af9d75882d222965c0bee01f5ca410f3e0
+    :commit: a5d464f7de98c03ecbbf0c60c4124faeac67633e
     :git: https://github.com/yonat/SwiftQuality
 
 SPEC CHECKSUMS:
   CheckmarkCollectionViewCell: b101b2f018504c40e9b4d35955fe6e99a0783777
   SweeterSwift: 2708d1eea926546f8f6e8fea38ac8f5598ff00c7
-  SwiftFormat: 6b67b6e7fe73d664f0cbb4f13721f130462c86a5
-  SwiftLint: fed9c66336e41fc74dc48a73678380718f0c8b0e
-  SwiftQuality: 9dddd6752df12ae7ed3b1eed24b6fc42d75724cf
+  SwiftFormat: 42b2e7e390bffa30ea7a9f2dd8c8872d37f6a093
+  SwiftLint: 6b0cf1f4d619808dbc16e4fab064ce6fc79f090b
+  SwiftQuality: 890e271defff439147373b686a9261dbc1f0c7f6
 
-PODFILE CHECKSUM: cd0dd06dca7ef4b56b96ac5618c22b8ad047f2ba
+PODFILE CHECKSUM: d8097909a3c3c8ad95498dc2d8eb387285bbef90
 
-COCOAPODS: 1.8.4
+COCOAPODS: 1.11.3

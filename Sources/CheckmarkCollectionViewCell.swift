@@ -57,7 +57,7 @@ import UIKit
 
     // MARK: - Overrides
 
-    open override var isSelected: Bool {
+    override open var isSelected: Bool {
         didSet {
             let animation = CATransition()
             animation.timingFunction = CAMediaTimingFunction(name: .easeInEaseOut)
@@ -68,7 +68,7 @@ import UIKit
         }
     }
 
-    open override func layoutSubviews() {
+    override open func layoutSubviews() {
         super.layoutSubviews()
         if contentView != checkmarkView.superview {
             setup()

@@ -38,8 +38,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
 }
 
-extension UIColor {
-    public class func randomColor(hue: CGFloat? = nil, saturation: CGFloat? = nil, brightness: CGFloat? = nil) -> UIColor {
+public extension UIColor {
+    class func randomColor(hue: CGFloat? = nil, saturation: CGFloat? = nil, brightness: CGFloat? = nil) -> UIColor {
         let hue = hue ?? CGFloat(arc4random() % 256) / 256 //  0.0 to 1.0
         let saturation = saturation ?? CGFloat(arc4random() % 128) / 256 + 0.5 //  0.5 to 1.0, away from white
         let brightness = brightness ?? CGFloat(arc4random() % 128) / 256 + 0.5 //  0.5 to 1.0, away from black
