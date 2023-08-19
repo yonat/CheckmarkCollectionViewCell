@@ -62,7 +62,7 @@ pod 'CheckmarkCollectionViewCell'
 
 ```swift
 dependencies: [
-    .package(url: "https://github.com/yonat/CheckmarkCollectionViewCell", from: "1.0.5")
+    .package(url: "https://github.com/yonat/CheckmarkCollectionViewCell", from: "1.0.6")
 ]
 ```
 
