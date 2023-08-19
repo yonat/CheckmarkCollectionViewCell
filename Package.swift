@@ -14,7 +14,7 @@ let package = Package(
         .package(url: "https://github.com/yonat/SweeterSwift", from: "1.0.2"),
     ],
     targets: [
-        .target(name: "CheckmarkCollectionViewCell", dependencies: ["SweeterSwift"], path: "Sources"),
+        .target(name: "CheckmarkCollectionViewCell", dependencies: ["SweeterSwift"], path: "Sources", resources: [.copy("PrivacyInfo.xcprivacy")]),
     ],
     swiftLanguageVersions: [.v5]
 )
