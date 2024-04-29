@@ -19,7 +19,7 @@ Pod::Spec.new do |s|
 
   s.source       = { :git => "https://github.com/yonat/CheckmarkCollectionViewCell.git", :tag => s.version }
   s.source_files  = "Sources/*.swift"
-  s.resources = ['PrivacyInfo.xcprivacy']
+  s.resource_bundles = {s.name => ['PrivacyInfo.xcprivacy']}
   s.subspec 'Resources' do |resources|
       resources.resource_bundle = {s.name => 'Sources/*.png'}
   end
